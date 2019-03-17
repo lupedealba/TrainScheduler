@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css"></style>
+    
+        <script>
+                function setup() {
+                    console.log("Setup");
+                }    
+        </script>
+</head>
+<body onLoad="setup();">
+<div class="container">
+<div class="jumbotron text-center">
+<h1 class="display-4">Anytime is train time</h1>
+<p class="lead">
+Choo Choo. Chee Chee.
+</p>
+</div>
+</div>
+<div id="main-container" class="container">
+<div id="table-container">
+<div class="card">
+    <div class="card-header">
+            Current Train Schedule
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td class="TrainName"></td>
+            <td class="destination"></td>
+            <td class="frequency"></td>
+            <td class="NextArrival"></td>
+            <td class="MinutesAway"></td>
+            
+            </tr>
+            <tr>
+            <td class="TrainName"></td>
+            <td class="destination"></td>
+            <td class="frequency"></td>
+            <td class="NextArrival"></td>
+            <td class="MinutesAway"></td>
+         
+            </tr>
+            <tr>
+            <td class="TrainName"></td>
+            <td class="destination"></td>
+            <td class="frequency"></td>
+            <td class="NextArrival"></td>
+            <td class="MinutesAway"></td>
+            
+            </tr>
+        </tbody>
+        </table>
+        <!--<div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+</div>
+</div>
+<br>
+
+<form>    
+<div class="card">
+    <div class="card-header">
+        Add Train
+    </div>
+        <div class="card-body">
+            <div class="form-group">
+                    <label for="name">Train Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="">           
+                </div>
+                <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="">
+                </div>
+                <div class="form-group">
+                        <label for="traintime">First Train Time (HH:mm - military timre)</label>
+                        <input type="text" class="form-control" id="traintime" placeholder="">
+                </div>
+                <div class="form-group">
+                            <label for="frequency">Frequency </label>
+                            <input type="text" class="form-control" id="frequency" placeholder="">
+                </div>
+                <div class="row">
+                    <div class="col-12"><button style="float: right;" id="submitButton" type="button" class="btn btn-primary">Submit</button></div>
+                </div>
+
+
+
+        <!--<h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>-->
+    </div>
+</div>
+</form>
+</div>
+</div>
+
+<script type="text/javascript" src="assets/javascript/moment.js"></script>
+    
+</body>
+</html>

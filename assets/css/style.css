@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(236, 233, 233);
+}
+
+.jumbotron {
+    background-color: rgb(99, 157, 223) !important;
+    color: #fff;
+    font-weight: bold;
+   }
+
+.card-header {
+    background-color:  rgb(99, 157, 223);
+}
