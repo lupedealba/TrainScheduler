@@ -6,7 +6,7 @@ var Frequency;
 // ///////////////////////////////////////ARRAYS & OBJECTS/////////////////////////////
 var newTrain={};
 // ///////////////////////////////////////FUNCTIONS////////////////////////////////////
-// //----------------------------------------------------------------------------------------------  linking to Firebase
+// //-----------------------------------------------------------------------------------  linking to Firebase
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyAaZJ8h69-c91KWDPcUyh5uym1Urh_eEbk",
@@ -19,7 +19,7 @@ var config = {
   firebase.initializeApp(config);
 
 
-// //----------------------------------------------------------------------------------------------  saving form to variables
+// //--------------------------------------------------------------------------------  saving form to variables
 $("#submitButton").on("click",function(event){
     event.preventDefault();
     TrainName=$("#name").val();
@@ -39,3 +39,6 @@ $("#submitButton").on("click",function(event){
     console.log(newTrain)
     firebase.database().ref('/newTrain').push(newTrain);
 })
+/////-------------------------------------------Missing:
+///// I am missing the Code to calculate when the next train will arrive.
+///// I also couldn't figure out how to plug in the new data into the table.
